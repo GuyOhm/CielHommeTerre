@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ciel Homme Terre</string>
+    <string name="name">Guillaume Ricciuti</string>
+    <string name="activity">Acupuncturist</string>
+    <string name="location">31, rue Pélisson, 34500 Béziers, FRANCE</string>
+    <string name="phone">+33 7 83 36 62 36</string>
+    <string name="website">www.cielhommeterre.fr</string>
+    <string name="short_desc">Traditional chinese acupuncture allows to harmonize energies using acupuncture channels or meridians.
+        It acts at the root of the energetics imbalance and has and effect on several diseases or discomforts. Exclusively by appointment.</string>
+</resources>

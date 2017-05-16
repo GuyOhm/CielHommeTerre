@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.cielhommeterre.cielhommeterre.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/goldenbground"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logo"
+        android:background="@color/colorBackground" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/info_padding">
+
+            <ImageView
+                android:id="@+id/face"
+                android:layout_width="@dimen/face"
+                android:layout_height="@dimen/face"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/face" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/face"
+                android:layout_centerHorizontal="true"
+                android:text="@string/name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/info_padding"
+                android:text="@string/activity"
+                android:textSize="@dimen/h2"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity"
+                android:layout_marginBottom="@dimen/spacing"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="@dimen/spacing"
+                android:gravity="center_vertical"
+                android:text="@string/location" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location"
+                android:layout_marginBottom="@dimen/spacing"
+                android:autoLink="phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/spacing"
+                android:gravity="center_vertical"
+                android:text="@string/phone"
+                android:textColorLink="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone"
+                android:layout_marginBottom="@dimen/spacing"
+                android:autoLink="web"
+                android:drawableLeft="@drawable/ic_internet"
+                android:drawablePadding="@dimen/spacing"
+                android:gravity="center_vertical"
+                android:text="@string/website"
+                android:textColorLink="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/short_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/website"
+                android:text="@string/short_desc" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

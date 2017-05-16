@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="info_padding">16dp</dimen>
+    <dimen name="spacing">8dp</dimen>
+    <dimen name="text_padding">4dp</dimen>
+    <dimen name="face">96dp</dimen>
+    <dimen name="h1">20sp</dimen>
+    <dimen name="h2">16sp</dimen>
+    <dimen name="icon">24dp</dimen>
+
+</resources>
